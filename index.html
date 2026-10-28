@@ -1,0 +1,732 @@
+```html
+<!DOCTYPE html>
+<html lang="ro" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicii Profesionale Acoperișuri & Construcții | Reducere 15%</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            orange: '#FF5722',
+                            amber: '#F59E0B',
+                            dark: '#0F172A',
+                            navy: '#1E293B',
+                            card: '#1E293B',
+                            border: '#334155'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0F17;
+            color: #F8FAFC;
+        }
+        .glow-orange {
+            box-shadow: 0 0 25px rgba(255, 87, 34, 0.35);
+        }
+        .glow-amber {
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+        }
+        .bg-grid {
+            background-size: 30px 30px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="antialiased bg-[#0B0F17] text-slate-100 min-h-screen flex flex-col selection:bg-orange-500 selection:text-white">
+
+    <!-- Announcement Bar -->
+    <div class="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-600 text-white text-xs sm:text-sm font-semibold py-2.5 px-4 text-center sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+            <span class="inline-flex items-center gap-1.5 bg-black/20 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-amber-200 animate-pulse">
+                <i data-lucide="zap" class="w-4 h-4 text-amber-300"></i>
+                Ofertă Limitată
+            </span>
+            <span>🔥 15% reducere pentru următorii 5 clienți! Nu rata reducerea - contactează-ne acum!</span>
+            <a href="tel:+40754705974" class="underline hover:text-amber-200 transition ml-1 font-bold">Apelează Acum &rarr;</a>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-[37px] z-40 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-orange-600 to-amber-500 flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
+                    <i data-lucide="home" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent block">EXPERT ACOPERIȘURI</span>
+                    <span class="text-[10px] text-orange-400 tracking-wider uppercase font-semibold">Construcții & Hidroizolații</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#servicii" class="hover:text-orange-400 transition-colors">Servicii</a>
+                <a href="#despre" class="hover:text-orange-400 transition-colors">De Ce Noi</a>
+                <a href="#galerie" class="hover:text-orange-400 transition-colors">Galerie Proiecte</a>
+                <a href="#estimator" class="hover:text-orange-400 transition-colors">Calculează Preț</a>
+                <a href="#contact" class="hover:text-orange-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Quick Action Phone Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="tel:+40754705974" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-100 px-4 py-2 rounded-xl font-semibold text-sm transition-all">
+                    <i data-lucide="phone-call" class="w-4 h-4 text-orange-500"></i>
+                    <span>+40 754 705 974</span>
+                </a>
+                <a href="https://wa.me/40754705974" target="_blank" class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-xl font-semibold text-sm transition-all shadow-md">
+                    <i data-lucide="message-square" class="w-4 h-4"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-300 hover:bg-slate-800">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#servicii" class="block py-2 text-slate-300 hover:text-orange-400 font-medium">Servicii</a>
+            <a href="#despre" class="block py-2 text-slate-300 hover:text-orange-400 font-medium">De Ce Noi</a>
+            <a href="#galerie" class="block py-2 text-slate-300 hover:text-orange-400 font-medium">Galerie Proiecte</a>
+            <a href="#estimator" class="block py-2 text-slate-300 hover:text-orange-400 font-medium">Calculează Preț</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-orange-400 font-medium">Contact</a>
+            <div class="pt-4 border-t border-slate-800 flex flex-col gap-2">
+                <a href="tel:+40754705974" class="flex items-center justify-center gap-2 bg-orange-600 text-white py-3 rounded-xl font-bold">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    Apelează: +40 754 705 974
+                </a>
+                <a href="https://wa.me/40754705974" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 text-white py-3 rounded-xl font-bold">
+                    <i data-lucide="message-square" class="w-5 h-5"></i>
+                    Trimite mesaj WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden bg-grid">
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-[#0B0F17]/90 to-[#0B0F17]"></div>
+        
+        <!-- Glow Orbs -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-orange-600/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-6">
+                
+                <!-- Status Badge -->
+                <div class="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700/80 px-4 py-2 rounded-full text-xs sm:text-sm text-slate-300 backdrop-blur-md">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+                    <span class="font-semibold text-emerald-400">Disponibili 24/7 pentru Urgențe</span>
+                    <span class="text-slate-500">|</span>
+                    <span class="text-slate-300">Răspundem rapid la telefon!</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15] text-white">
+                    Montaj & Reparații Acoperișuri de <span class="bg-gradient-to-r from-orange-500 via-amber-400 to-orange-400 bg-clip-text text-transparent">Înaltă Calitate</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed">
+                    Executăm orice tip de acoperiș din țiglă ceramică sau metalică. Reparăm și renovăm acoperișuri indiferent de dificultate.
+                </p>
+
+                <!-- Value Props -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-left">
+                    <div class="flex items-center gap-3 bg-slate-900/60 border border-slate-800 p-3 rounded-xl">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-orange-500 flex-shrink-0"></i>
+                        <span class="text-xs font-semibold text-slate-200">Țiglă Ceramică & Metalică</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-slate-900/60 border border-slate-800 p-3 rounded-xl">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-orange-500 flex-shrink-0"></i>
+                        <span class="text-xs font-semibold text-slate-200">Garanție Lucrare</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-slate-900/60 border border-slate-800 p-3 rounded-xl">
+                        <i data-lucide="clock" class="w-5 h-5 text-orange-500 flex-shrink-0"></i>
+                        <span class="text-xs font-semibold text-slate-200">Intervenții Rapid 24/7</span>
+                    </div>
+                </div>
+
+                <!-- Primary CTAs -->
+                <div class="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="tel:+40754705974" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg glow-orange transition-all transform hover:-translate-y-0.5">
+                        <i data-lucide="phone" class="w-6 h-6"></i>
+                        <span>Sună Acum pentru Ofertă</span>
+                    </a>
+                    
+                    <a href="https://wa.me/40754705974" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5">
+                        <i data-lucide="message-square" class="w-6 h-6"></i>
+                        <span>Mesaj pe WhatsApp</span>
+                    </a>
+                </div>
+
+                <p class="text-xs text-slate-400 pt-2">
+                    💬 Contactează-ne prin mesaj, telefon sau WhatsApp pentru o ofertă gratuită de preț!
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Spotlight Banner -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-10">
+        <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-amber-500/40 rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-amber-500/10 rounded-full blur-2xl"></div>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-2 text-center md:text-left">
+                    <div class="inline-block bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider">
+                        Promotie Activă
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-black text-white">15% REDUCERE pentru următorii 5 clienți</h3>
+                    <p class="text-slate-300 text-sm sm:text-base">
+                        Apelează acum la <strong>+40 754 705 974</strong> și rezervă-ți reducerea pentru orice lucrare de acoperiș sau construcție!
+                    </p>
+                </div>
+                <div class="flex-shrink-0">
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-6 py-3.5 rounded-xl transition shadow-lg text-base">
+                        <i data-lucide="sparkles" class="w-5 h-5"></i>
+                        Revendică Reducerea
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="servicii" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-bold text-orange-400 tracking-widest uppercase">Gama Noastră Completă de Servicii</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Ce Servicii Executăm la Cheie</p>
+                <p class="text-slate-400">Oferim soluții profesionale complete pentru casa ta, realizate cu meșteri experimentați și materiale premium.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                        <i data-lucide="home" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">1. Montaj Acoperișuri</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Montăm acoperișuri noi din țiglă metalică sau ceramică, șindrilă bituminoasă și tablă cutată, respectând toate normele tehnice.
+                    </p>
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                        <i data-lucide="wrench" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">2. Reparații Acoperiș</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Remedierea infiltrațiilor, schimbarea țiglelor sparte, etanșări coame și cosuri de fum. Intervenții rapide pentru orice defecțiune.
+                    </p>
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                        <i data-lucide="hammer" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">3. Dulgherie</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Execuție structuri din lemn, șarpante, leatuit, asterială și consolidare structuri vechi cu tratamente antifungice și ignifuge.
+                    </p>
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">4. Mansardări</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Transformăm podul neutilizat într-un spațiu locuibil, modern și confortabil. Reconfigurare structură și placări uscate.
+                    </p>
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                        <i data-lucide="droplet" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">5. Hidroizolații</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Hidroizolații cu membrană bituminoasă sau lichidă pentru terase, fundații și acoperișuri plate, prevenind orice infiltratie.
+                    </p>
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                        <i data-lucide="git-commit" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">6. Jgheaburi și Burlane</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Montaj și curățare sisteme pluviale (jgheaburi, burlane, opritoare de zăpadă) pentru evacuarea eficientă a apei pluviale.
+                    </p>
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service Card 7 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                        <i data-lucide="paint-roller" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">7. Vopsire Acoperiș</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Curățare cu presiune înaltă, tratament anticoroziv și vopsire acoperișuri din tablă sau țiglă pentru un aspect ca nou.
+                    </p>
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service Card 8 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                        <i data-lucide="layout" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">8. Amenajări Interioare & Exterioare</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Finisaje complete, gresie, faianță, gips-carton, tencuieli decorative, pavaje și amenajare spații exterioare.
+                    </p>
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service Card 9 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                        <i data-lucide="shield" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">9. Izolații cu Vată Bazaltică/Minerală</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Izolare termică și fonică superioară pentru poduri și acoperișuri, reducând substanțial costurile cu încălzirea.
+                    </p>
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service Card 10 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                        <i data-lucide="grid" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">10. Garduri</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Construcție garduri din jaluzea, șipcă metalică, panouri bordurate, meșteșugite din piatră sau lemn cu soclu rezistent.
+                    </p>
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service Card 11 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                        <i data-lucide="sun" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">11. Izolații Exterioare</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Sisteme termoizolante cu polistiren sau vată bazaltică pe fațadă, tencuială decorativă și finisaje exterioare rezistente.
+                    </p>
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service Card 12 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                        <i data-lucide="building-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">12. Hidroizolații Blocuri</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Lucrări profesionale de hidroizolație terase de bloc, termosistem și soluții contra infiltrațiilor cu garanție extinsă.
+                    </p>
+                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+            </div>
+
+            <div class="mt-12 text-center bg-slate-900/50 border border-slate-800 p-6 rounded-2xl">
+                <p class="text-lg font-bold text-white mb-2">Ai nevoie de alte servicii specifice?</p>
+                <p class="text-slate-400 text-sm mb-4">Executăm orice lucrare din domeniul construcțiilor la cererea clientului.</p>
+                <a href="tel:+40754705974" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-orange-400 border border-orange-500/30 px-6 py-3 rounded-xl font-semibold transition">
+                    <i data-lucide="phone-call" class="w-5 h-5"></i>
+                    Discută cu un meșter la +40 754 705 974
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="despre" class="py-20 bg-[#0B0F17] relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-xs font-bold text-orange-400 tracking-widest uppercase">De Ce Să Ne Alegi Pe Noi</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Echipă cu Experiență & Lucrări Executate Fără Improvizații</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Ne mândrim cu o experiență vastă în domeniul montajului și reparațiilor de acoperișuri. Indiferent că aveți o problemă urgentă cu infiltrațiile sau doriți să construiți un acoperiș nou la cheie, vă oferim garanție și seriozitate maximă.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-orange-500/10 text-orange-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="check-circle" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white">Răspuns Rapid & Urgențe</h4>
+                                <p class="text-slate-400 text-sm">Răspundem prompt la apeluri și ne deplasăm rapid pentru remedierea avariilor la acoperiș.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-orange-500/10 text-orange-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white">Materiale de Calitate Superioară</h4>
+                                <p class="text-slate-400 text-sm">Lucrăm doar cu producători acreditați pentru țiglă, tablă, hidroizolații și vată bazaltică.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-orange-500/10 text-orange-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="badge-percent" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white">Prețuri Corecte & Transparență</h4>
+                                <p class="text-slate-400 text-sm">Constatare gratuită, deviz estimativ clar și reducerea curentă de 15% aplicată pe loc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1200&q=80" alt="Lucrari acoperis" class="w-full h-[450px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 bg-slate-900/90 backdrop-blur-md p-4 rounded-xl border border-slate-700/60">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-white font-bold">Disponibili Imediat</p>
+                                    <p class="text-xs text-slate-400">Sună la +40 754 705 974 pentru programare</p>
+                                </div>
+                                <a href="tel:+40754705974" class="bg-orange-500 text-white p-2.5 rounded-lg">
+                                    <i data-lucide="phone" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section id="galerie" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-bold text-orange-400 tracking-widest uppercase">Portofoliu</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Proiecte Recente Executate</p>
+                <p class="text-slate-400">Vezi exemple din lucrările noastre de montaj, dulgherie, hidroizolații și reparații.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=800&q=80" alt="Montaj Tigla Metalica" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-xs font-bold text-orange-400 uppercase">Montaj Nou</span>
+                        <h4 class="text-lg font-bold text-white">Acoperiș Țiglă Metalică Premium</h4>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Dulgherie si Structura" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-xs font-bold text-orange-400 uppercase">Dulgherie</span>
+                        <h4 class="text-lg font-bold text-white">Sarpantă Lemn & Asterială</h4>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Izolatie Mansarda" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-xs font-bold text-orange-400 uppercase">Mansardare</span>
+                        <h4 class="text-lg font-bold text-white">Izolație Vată & Amenajare</h4>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=800&q=80" alt="Constructie Gard" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-xs font-bold text-orange-400 uppercase">Garduri</span>
+                        <h4 class="text-lg font-bold text-white">Gard Șipcă Metalică & Soclu</h4>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Hidroizolatie" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-xs font-bold text-orange-400 uppercase">Hidroizolații</span>
+                        <h4 class="text-lg font-bold text-white">Hidroizolație Terasă Bloc</h4>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Reparatii Urgenta" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-xs font-bold text-orange-400 uppercase">Urgență</span>
+                        <h4 class="text-lg font-bold text-white">Reparație Rapidă Infiltrație</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Price Estimator -->
+    <section id="estimator" class="py-20 bg-[#0B0F17]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+                <div class="text-center max-w-xl mx-auto mb-8 space-y-2">
+                    <span class="text-xs font-bold text-orange-400 tracking-widest uppercase">Estimator Gratuit</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Calculează Ofertă Estimativă</h2>
+                    <p class="text-slate-400 text-sm">Selectează serviciul dorit și suprafața aproximativă pentru o estimare rapidă.</p>
+                </div>
+
+                <form id="estimatorForm" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-2">Alege Serviciul Principal:</label>
+                        <select id="serviceSelect" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500">
+                            <option value="montaj">Montaj Acoperiș Nou (Țiglă Ceramică/Metalică)</option>
+                            <option value="reparatii">Reparații Acoperiș / Etanșare</option>
+                            <option value="dulgherie">Dulgherie & Structură Lemn</option>
+                            <option value="hidroizolatie">Hidroizolații Terase / Blocuri</option>
+                            <option value="jgheaburi">Montaj Jgheaburi și Burlane</option>
+                            <option value="vopsire">Vopsire Acoperiș</option>
+                            <option value="izolatie">Izolație Vată Bazaltică / Exterior</option>
+                            <option value="garduri">Construcție Garduri</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="text-sm font-semibold text-slate-300">Suprafață Estimată (mp):</label>
+                            <span id="areaValue" class="text-orange-400 font-bold text-lg">100 mp</span>
+                        </div>
+                        <input type="range" id="areaRange" min="20" max="500" value="100" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-orange-500">
+                    </div>
+
+                    <!-- Discount Applied Callout -->
+                    <div class="bg-slate-800/80 border border-amber-500/30 rounded-xl p-4 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="tag" class="w-6 h-6 text-amber-400"></i>
+                            <div>
+                                <p class="text-xs text-slate-400">Reducere aplicată:</p>
+                                <p class="text-sm font-bold text-amber-300">15% REDUCERE CLIENT NOU</p>
+                            </div>
+                        </div>
+                        <span class="text-xs bg-amber-500/20 text-amber-300 px-2.5 py-1 rounded-full font-semibold">Activă</span>
+                    </div>
+
+                    <button type="button" id="calcBtn" class="w-full bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-bold py-4 rounded-xl shadow-lg glow-orange transition text-base flex items-center justify-center gap-2">
+                        <i data-lucide="calculator" class="w-5 h-5"></i>
+                        <span>Trimite Solicitarea de Pret pe WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Direct Call Section -->
+    <section id="contact" class="py-20 bg-slate-950 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <span class="text-xs font-bold text-orange-400 tracking-widest uppercase">Contact Rapid</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Suntem Pregătiți Să Începem Lucrarea!</h2>
+                    <p class="text-slate-300">
+                        Contactează-ne prin mesaj, telefon sau WhatsApp pentru o ofertă personalizată de preț. Răspundem rapid la orice solicitare.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <a href="tel:+40754705974" class="flex items-center gap-4 bg-slate-900 border border-slate-800 p-4 rounded-2xl hover:border-orange-500 transition group">
+                            <div class="w-12 h-12 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center group-hover:bg-orange-500 group-hover:text-white transition">
+                                <i data-lucide="phone-call" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Telefon Direct (Disponibil 24/7)</p>
+                                <p class="text-xl font-extrabold text-white">+40 754 705 974</p>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/40754705974" target="_blank" class="flex items-center gap-4 bg-slate-900 border border-slate-800 p-4 rounded-2xl hover:border-emerald-500 transition group">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition">
+                                <i data-lucide="message-square" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">WhatsApp Instant</p>
+                                <p class="text-xl font-extrabold text-white">Trimite un mesaj pe WhatsApp</p>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-4 bg-slate-900 border border-slate-800 p-4 rounded-2xl">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center">
+                                <i data-lucide="clock" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Program de Lucru</p>
+                                <p class="text-base font-bold text-white">Luni - Duminică: Non-Stop pentru Urgențe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Direct Form -->
+                <div class="bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-3xl shadow-xl">
+                    <h3 class="text-xl font-bold text-white mb-4">Trimite un Mesaj Rapid</h3>
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-1">Numele Tău:</label>
+                            <input type="text" id="formName" required placeholder="Ex: Ion Popescu" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-1">Număr de Telefon:</label>
+                            <input type="tel" id="formPhone" required placeholder="Ex: 07xx xxx xxx" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-1">Detalii Lucrare / Mesaj:</label>
+                            <textarea id="formMessage" rows="4" required placeholder="Descrie pe scurt ce lucrare dorești să execuți..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500 text-sm"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold py-3.5 rounded-xl transition text-sm flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span>Trimite Mesaj pe WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-10 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <i data-lucide="home" class="w-5 h-5 text-orange-500"></i>
+                <span class="font-bold text-slate-300">EXPERT ACOPERIȘURI</span>
+                <span>© 2026 Toate drepturile rezervate.</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="tel:+40754705974" class="hover:text-orange-400 transition">+40 754 705 974</a>
+                <a href="#servicii" class="hover:text-orange-400 transition">Servicii</a>
+                <a href="https://wa.me/40754705974" target="_blank" class="hover:text-emerald-400 transition">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Click-to-Call / WhatsApp Bar -->
+    <div class="sm:hidden fixed bottom-4 left-4 right-4 z-50 flex items-center gap-2">
+        <a href="tel:+40754705974" class="flex-1 bg-orange-600 active:bg-orange-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-2xl flex items-center justify-center gap-2 text-sm glow-orange">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+            <span>Suna Acum</span>
+        </a>
+        <a href="https://wa.me/40754705974" target="_blank" class="flex-1 bg-emerald-600 active:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-2xl flex items-center justify-center gap-2 text-sm">
+            <i data-lucide="message-square" class="w-5 h-5"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle Logic
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Area Range Slider Logic
+        const areaRange = document.getElementById('areaRange');
+        const areaValue = document.getElementById('areaValue');
+
+        areaRange.addEventListener('input', (e) => {
+            areaValue.textContent = `${e.target.value} mp`;
+        });
+
+        // Calculator Form -> Redirect to WhatsApp with pre-filled message
+        document.getElementById('calcBtn').addEventListener('click', () => {
+            const service = document.getElementById('serviceSelect').selectedOptions[0].text;
+            const area = areaRange.value;
+            const phone = "40754705974";
+
+            const message = `Buna ziua! Doresc o estimare de pret pentru serviciul: ${service}, pe o suprafata de aproximativ ${area} mp. Beneficiez de reducerea de 15%?`;
+            const encodedMessage = encodeURIComponent(message);
+
+            window.open(`https://wa.me/${phone}?text=${encodedMessage}`, '_blank');
+        });
+
+        // Contact Form -> Redirect to WhatsApp with pre-filled details
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('formName').value;
+            const phoneNum = document.getElementById('formPhone').value;
+            const msg = document.getElementById('formMessage').value;
+            const targetPhone = "40754705974";
+
+            const text = `Buna ziua! Numele meu este ${name} (Tel: ${phoneNum}). \nDetalii lucrare: ${msg}`;
+            const encodedText = encodeURIComponent(text);
+
+            window.open(`https://wa.me/${targetPhone}?text=${encodedText}`, '_blank');
+        });
+    </script>
+</body>
+</html>
+```
