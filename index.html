@@ -1,732 +1,427 @@
-```html
 <!DOCTYPE html>
-<html lang="ro" class="scroll-smooth">
+<html lang="ro" class="is-loading">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicii Profesionale Acoperișuri & Construcții | Reducere 15%</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Font Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            orange: '#FF5722',
-                            amber: '#F59E0B',
-                            dark: '#0F172A',
-                            navy: '#1E293B',
-                            card: '#1E293B',
-                            border: '#334155'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0B0F17;
-            color: #F8FAFC;
-        }
-        .glow-orange {
-            box-shadow: 0 0 25px rgba(255, 87, 34, 0.35);
-        }
-        .glow-amber {
-            box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
-        }
-        .bg-grid {
-            background-size: 30px 30px;
-            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acoperis Fiabil — Montaj și reparații acoperișuri în toată România | Deviz gratuit</title>
+<meta name="description" content="Acoperis Fiabil: înlocuire, montaj și reparații acoperișuri în toată România. Echipe mobile în toate județele, deplasare și deviz gratuit, preț final în scris și garanție la manoperă. Sunați acum.">
+<link rel="canonical" href="https://acoperisfiabil.ro/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Acoperis Fiabil">
+<meta property="og:title" content="Acoperis Fiabil — Acoperișuri în toată România | Deviz gratuit">
+<meta property="og:description" content="Acoperis Fiabil: înlocuire, montaj și reparații acoperișuri în toată România. Echipe mobile în toate județele, deplasare și deviz gratuit, preț final în scris și garanție la manoperă. Sunați acum.">
+<meta property="og:url" content="https://acoperisfiabil.ro/">
+<meta property="og:image" content="https://acoperisfiabil.ro/images/hero-1.webp">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"RoofingContractor",
+ "@id":"https://acoperisfiabil.ro/#business",
+ "name":"Acoperis Fiabil",
+ "description":"Înlocuire, montaj și reparații acoperișuri, dulgherie, hidroizolații și jgheaburi, la nivel național.",
+ "telephone":"+40754705974",
+ "url":"https://acoperisfiabil.ro/",
+ "image":"https://acoperisfiabil.ro/images/hero-1.webp",
+ "address":{"@type":"PostalAddress","addressCountry":"RO"},
+ "areaServed":[{"@type":"Country","name":"România"}],
+ "serviceArea":[{"@type": "AdministrativeArea", "name": "Municipiul București"}, {"@type": "AdministrativeArea", "name": "Județul Ilfov"}, {"@type": "AdministrativeArea", "name": "Județul Prahova"}, {"@type": "AdministrativeArea", "name": "Județul Dâmbovița"}, {"@type": "AdministrativeArea", "name": "Județul Argeș"}, {"@type": "AdministrativeArea", "name": "Județul Buzău"}, {"@type": "AdministrativeArea", "name": "Județul Brăila"}, {"@type": "AdministrativeArea", "name": "Județul Ialomița"}, {"@type": "AdministrativeArea", "name": "Județul Călărași"}, {"@type": "AdministrativeArea", "name": "Județul Giurgiu"}, {"@type": "AdministrativeArea", "name": "Județul Teleorman"}, {"@type": "AdministrativeArea", "name": "Județul Dolj"}, {"@type": "AdministrativeArea", "name": "Județul Gorj"}, {"@type": "AdministrativeArea", "name": "Județul Mehedinți"}, {"@type": "AdministrativeArea", "name": "Județul Olt"}, {"@type": "AdministrativeArea", "name": "Județul Vâlcea"}, {"@type": "AdministrativeArea", "name": "Județul Iași"}, {"@type": "AdministrativeArea", "name": "Județul Bacău"}, {"@type": "AdministrativeArea", "name": "Județul Neamț"}, {"@type": "AdministrativeArea", "name": "Județul Suceava"}, {"@type": "AdministrativeArea", "name": "Județul Botoșani"}, {"@type": "AdministrativeArea", "name": "Județul Vaslui"}, {"@type": "AdministrativeArea", "name": "Județul Galați"}, {"@type": "AdministrativeArea", "name": "Județul Vrancea"}, {"@type": "AdministrativeArea", "name": "Județul Constanța"}, {"@type": "AdministrativeArea", "name": "Județul Tulcea"}, {"@type": "AdministrativeArea", "name": "Județul Brașov"}, {"@type": "AdministrativeArea", "name": "Județul Sibiu"}, {"@type": "AdministrativeArea", "name": "Județul Mureș"}, {"@type": "AdministrativeArea", "name": "Județul Alba"}, {"@type": "AdministrativeArea", "name": "Județul Harghita"}, {"@type": "AdministrativeArea", "name": "Județul Covasna"}, {"@type": "AdministrativeArea", "name": "Județul Cluj"}, {"@type": "AdministrativeArea", "name": "Județul Bihor"}, {"@type": "AdministrativeArea", "name": "Județul Maramureș"}, {"@type": "AdministrativeArea", "name": "Județul Satu Mare"}, {"@type": "AdministrativeArea", "name": "Județul Sălaj"}, {"@type": "AdministrativeArea", "name": "Județul Bistrița-Năsăud"}, {"@type": "AdministrativeArea", "name": "Județul Timiș"}, {"@type": "AdministrativeArea", "name": "Județul Arad"}, {"@type": "AdministrativeArea", "name": "Județul Caraș-Severin"}, {"@type": "AdministrativeArea", "name": "Județul Hunedoara"}],
+ "priceRange":"$$",
+ "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}
+}
+</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ce fel de lucrări executați?","acceptedAnswer":{"@type":"Answer","text":"Tot ce ține de acoperiș: înlocuire, renovare, montaj la case noi, reparații și infiltrații, dulgherie și șarpante, jgheaburi și burlane, hidroizolații și terase. Montăm și panouri sandwich, șindrilă bituminoasă, ferestre de mansardă și luminatoare."}},{"@type":"Question","name":"Lucrați cu materialele dumneavoastră sau cu ale mele?","acceptedAnswer":{"@type":"Answer","text":"Executăm manopera. Vă calculăm necesarul exact de materiale, vă recomandăm furnizori de încredere și cumpărați direct de la ei, la prețul lor. Așa vedeți separat cât plătiți pe materiale și cât pe manoperă, fără adaos ascuns între cele două."}},{"@type":"Question","name":"Îmi puteți da un preț la telefon?","acceptedAnswer":{"@type":"Answer","text":"Vă putem spune la telefon cum stau lucrurile în general și la ce să vă așteptați, dar un preț real vine după măsurătoare. Suprafața reală a unui acoperiș este mai mare decât suprafața casei, uneori cu 30 până la 40 la sută, în funcție de pantă și de formă. Un preț dat fără măsurători aproape întotdeauna crește pe parcurs. Deplasarea și măsurătoarea sunt gratuite."}},{"@type":"Question","name":"În ce zone lucrați?","acceptedAnswer":{"@type":"Answer","text":"Lucrăm la nivel național, cu echipe mobile. Ne spuneți unde este lucrarea și organizăm o vizită pentru evaluare și măsurători gratuite."}},{"@type":"Question","name":"Cine execută efectiv lucrarea?","acceptedAnswer":{"@type":"Answer","text":"Echipa noastră. Nu subcontractăm lucrările către echipe găsite pentru un singur proiect, tocmai ca să existe un singur responsabil pentru toate etapele și cineva la care puteți reveni după finalizare."}},{"@type":"Question","name":"Ce garanție oferiți?","acceptedAnswer":{"@type":"Answer","text":"Oferim garanție la manoperă pentru toate lucrările executate de echipa noastră. Garanția materialelor vine de la producătorul pe care îl alegeți, iar un montaj corect este chiar condiția ca acea garanție să rămână valabilă."}},{"@type":"Question","name":"Cât durează până începeți lucrarea?","acceptedAnswer":{"@type":"Answer","text":"După ce acceptați oferta stabilim împreună data de start și ne încadrăm în termenul convenit. Pentru urgențe, cum ar fi o infiltrație activă, ne organizăm cât mai repede posibil."}},{"@type":"Question","name":"Se poate plăti în rate?","acceptedAnswer":{"@type":"Answer","text":"Da, pentru lucrările mai mari putem discuta eșalonarea plății pe etapele lucrării. Ne spuneți la telefon ce variantă v-ar conveni și vedem ce se poate face."}}]}</script>
 </head>
-<body class="antialiased bg-[#0B0F17] text-slate-100 min-h-screen flex flex-col selection:bg-orange-500 selection:text-white">
+<body>
+<div class="loader" id="loader" aria-hidden="true">
+  <svg viewBox="0 0 32 32" fill="none">
+    <path class="roof" d="M5 17 L16 7 L27 17" stroke="#C94A1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="wall" d="M8.5 15.5 L8.5 25 L23.5 25 L23.5 15.5" stroke="#F6F1EA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line class="tile" x1="12.5" y1="11.3" x2="19.5" y2="11.3" stroke="#F6F1EA" stroke-width="1.6" stroke-linecap="round"/>
+    <line class="tile" x1="10.3" y1="14.1" x2="21.7" y2="14.1" stroke="#F6F1EA" stroke-width="1.6" stroke-linecap="round"/>
+  </svg>
+</div>
+<noscript><style>html.is-loading{overflow:visible!important}.loader{display:none!important}</style></noscript>
 
-    <!-- Announcement Bar -->
-    <div class="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-600 text-white text-xs sm:text-sm font-semibold py-2.5 px-4 text-center sticky top-0 z-50 shadow-md">
-        <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
-            <span class="inline-flex items-center gap-1.5 bg-black/20 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-amber-200 animate-pulse">
-                <i data-lucide="zap" class="w-4 h-4 text-amber-300"></i>
-                Ofertă Limitată
-            </span>
-            <span>🔥 15% reducere pentru următorii 5 clienți! Nu rata reducerea - contactează-ne acum!</span>
-            <a href="tel:+40754705974" class="underline hover:text-amber-200 transition ml-1 font-bold">Apelează Acum &rarr;</a>
-        </div>
+<div class="topbar"><div class="wrap">
+  <span>Acoperire națională · <b>Deplasare și deviz gratuit</b></span>
+  <span class="tb-r"><span>Program non-stop pentru urgențe</span><span>Ofertă în 24 de ore</span></span>
+</div></div>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#141110"/><path d="M5 17 L16 7 L27 17" stroke="#c43a17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M8.5 15.5 L8.5 25 L23.5 25 L23.5 15.5" stroke="#F6F1EA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg><span class="brand-t"><b>Acoperis Fiabil</b><span>Acoperișuri · Toată România</span></span></a>
+    <nav class="nav"><a href="/servicii/">Servicii</a><a href="/lucrari/">Lucrări</a><a href="/recenzii/">Garanție</a><a href="/calculator-pret/">Calculator preț</a><a href="/intrebari-frecvente/">Întrebări</a><a href="/contact/">Contact</a></nav>
+    <div class="hdr-cta">
+      <a class="hdr-tel" href="tel:+40754705974"><span>Contact vânzări</span><b>0754 705 974</b></a>
+      <a class="btn btn-p btn-sm" href="/calculator-pret/">Cereți oferta</a>
     </div>
-
-    <!-- Navigation Header -->
-    <header class="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-[37px] z-40 transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Logo -->
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-orange-600 to-amber-500 flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
-                    <i data-lucide="home" class="w-6 h-6"></i>
-                </div>
-                <div>
-                    <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent block">EXPERT ACOPERIȘURI</span>
-                    <span class="text-[10px] text-orange-400 tracking-wider uppercase font-semibold">Construcții & Hidroizolații</span>
-                </div>
-            </a>
-
-            <!-- Desktop Nav Links -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#servicii" class="hover:text-orange-400 transition-colors">Servicii</a>
-                <a href="#despre" class="hover:text-orange-400 transition-colors">De Ce Noi</a>
-                <a href="#galerie" class="hover:text-orange-400 transition-colors">Galerie Proiecte</a>
-                <a href="#estimator" class="hover:text-orange-400 transition-colors">Calculează Preț</a>
-                <a href="#contact" class="hover:text-orange-400 transition-colors">Contact</a>
-            </nav>
-
-            <!-- Quick Action Phone Button -->
-            <div class="hidden sm:flex items-center gap-3">
-                <a href="tel:+40754705974" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-100 px-4 py-2 rounded-xl font-semibold text-sm transition-all">
-                    <i data-lucide="phone-call" class="w-4 h-4 text-orange-500"></i>
-                    <span>+40 754 705 974</span>
-                </a>
-                <a href="https://wa.me/40754705974" target="_blank" class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-xl font-semibold text-sm transition-all shadow-md">
-                    <i data-lucide="message-square" class="w-4 h-4"></i>
-                    <span>WhatsApp</span>
-                </a>
-            </div>
-
-            <!-- Mobile Menu Toggle Button -->
-            <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-300 hover:bg-slate-800">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
-        </div>
-
-        <!-- Mobile Navigation Drawer -->
-        <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
-            <a href="#servicii" class="block py-2 text-slate-300 hover:text-orange-400 font-medium">Servicii</a>
-            <a href="#despre" class="block py-2 text-slate-300 hover:text-orange-400 font-medium">De Ce Noi</a>
-            <a href="#galerie" class="block py-2 text-slate-300 hover:text-orange-400 font-medium">Galerie Proiecte</a>
-            <a href="#estimator" class="block py-2 text-slate-300 hover:text-orange-400 font-medium">Calculează Preț</a>
-            <a href="#contact" class="block py-2 text-slate-300 hover:text-orange-400 font-medium">Contact</a>
-            <div class="pt-4 border-t border-slate-800 flex flex-col gap-2">
-                <a href="tel:+40754705974" class="flex items-center justify-center gap-2 bg-orange-600 text-white py-3 rounded-xl font-bold">
-                    <i data-lucide="phone" class="w-5 h-5"></i>
-                    Apelează: +40 754 705 974
-                </a>
-                <a href="https://wa.me/40754705974" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 text-white py-3 rounded-xl font-bold">
-                    <i data-lucide="message-square" class="w-5 h-5"></i>
-                    Trimite mesaj WhatsApp
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden bg-grid">
-        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-[#0B0F17]/90 to-[#0B0F17]"></div>
-        
-        <!-- Glow Orbs -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-orange-600/15 rounded-full blur-[120px] pointer-events-none"></div>
-
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center space-y-6">
-                
-                <!-- Status Badge -->
-                <div class="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700/80 px-4 py-2 rounded-full text-xs sm:text-sm text-slate-300 backdrop-blur-md">
-                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
-                    <span class="font-semibold text-emerald-400">Disponibili 24/7 pentru Urgențe</span>
-                    <span class="text-slate-500">|</span>
-                    <span class="text-slate-300">Răspundem rapid la telefon!</span>
-                </div>
-
-                <!-- Main Heading -->
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15] text-white">
-                    Montaj & Reparații Acoperișuri de <span class="bg-gradient-to-r from-orange-500 via-amber-400 to-orange-400 bg-clip-text text-transparent">Înaltă Calitate</span>
-                </h1>
-
-                <!-- Subtitle -->
-                <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed">
-                    Executăm orice tip de acoperiș din țiglă ceramică sau metalică. Reparăm și renovăm acoperișuri indiferent de dificultate.
-                </p>
-
-                <!-- Value Props -->
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-left">
-                    <div class="flex items-center gap-3 bg-slate-900/60 border border-slate-800 p-3 rounded-xl">
-                        <i data-lucide="check-circle-2" class="w-5 h-5 text-orange-500 flex-shrink-0"></i>
-                        <span class="text-xs font-semibold text-slate-200">Țiglă Ceramică & Metalică</span>
-                    </div>
-                    <div class="flex items-center gap-3 bg-slate-900/60 border border-slate-800 p-3 rounded-xl">
-                        <i data-lucide="shield-check" class="w-5 h-5 text-orange-500 flex-shrink-0"></i>
-                        <span class="text-xs font-semibold text-slate-200">Garanție Lucrare</span>
-                    </div>
-                    <div class="flex items-center gap-3 bg-slate-900/60 border border-slate-800 p-3 rounded-xl">
-                        <i data-lucide="clock" class="w-5 h-5 text-orange-500 flex-shrink-0"></i>
-                        <span class="text-xs font-semibold text-slate-200">Intervenții Rapid 24/7</span>
-                    </div>
-                </div>
-
-                <!-- Primary CTAs -->
-                <div class="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="tel:+40754705974" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg glow-orange transition-all transform hover:-translate-y-0.5">
-                        <i data-lucide="phone" class="w-6 h-6"></i>
-                        <span>Sună Acum pentru Ofertă</span>
-                    </a>
-                    
-                    <a href="https://wa.me/40754705974" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5">
-                        <i data-lucide="message-square" class="w-6 h-6"></i>
-                        <span>Mesaj pe WhatsApp</span>
-                    </a>
-                </div>
-
-                <p class="text-xs text-slate-400 pt-2">
-                    💬 Contactează-ne prin mesaj, telefon sau WhatsApp pentru o ofertă gratuită de preț!
-                </p>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Offer Spotlight Banner -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-10">
-        <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-amber-500/40 rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
-            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-amber-500/10 rounded-full blur-2xl"></div>
-            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-                <div class="space-y-2 text-center md:text-left">
-                    <div class="inline-block bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider">
-                        Promotie Activă
-                    </div>
-                    <h3 class="text-2xl sm:text-3xl font-black text-white">15% REDUCERE pentru următorii 5 clienți</h3>
-                    <p class="text-slate-300 text-sm sm:text-base">
-                        Apelează acum la <strong>+40 754 705 974</strong> și rezervă-ți reducerea pentru orice lucrare de acoperiș sau construcție!
-                    </p>
-                </div>
-                <div class="flex-shrink-0">
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-6 py-3.5 rounded-xl transition shadow-lg text-base">
-                        <i data-lucide="sparkles" class="w-5 h-5"></i>
-                        Revendică Reducerea
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Grid Section -->
-    <section id="servicii" class="py-20 bg-slate-950">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 class="text-xs font-bold text-orange-400 tracking-widest uppercase">Gama Noastră Completă de Servicii</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-white">Ce Servicii Executăm la Cheie</p>
-                <p class="text-slate-400">Oferim soluții profesionale complete pentru casa ta, realizate cu meșteri experimentați și materiale premium.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- Service Card 1 -->
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
-                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                        <i data-lucide="home" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">1. Montaj Acoperișuri</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Montăm acoperișuri noi din țiglă metalică sau ceramică, șindrilă bituminoasă și tablă cutată, respectând toate normele tehnice.
-                    </p>
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Service Card 2 -->
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
-                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                        <i data-lucide="wrench" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">2. Reparații Acoperiș</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Remedierea infiltrațiilor, schimbarea țiglelor sparte, etanșări coame și cosuri de fum. Intervenții rapide pentru orice defecțiune.
-                    </p>
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Service Card 3 -->
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
-                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                        <i data-lucide="hammer" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">3. Dulgherie</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Execuție structuri din lemn, șarpante, leatuit, asterială și consolidare structuri vechi cu tratamente antifungice și ignifuge.
-                    </p>
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Service Card 4 -->
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
-                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                        <i data-lucide="layers" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">4. Mansardări</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Transformăm podul neutilizat într-un spațiu locuibil, modern și confortabil. Reconfigurare structură și placări uscate.
-                    </p>
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Service Card 5 -->
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
-                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                        <i data-lucide="droplet" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">5. Hidroizolații</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Hidroizolații cu membrană bituminoasă sau lichidă pentru terase, fundații și acoperișuri plate, prevenind orice infiltratie.
-                    </p>
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Service Card 6 -->
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
-                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                        <i data-lucide="git-commit" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">6. Jgheaburi și Burlane</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Montaj și curățare sisteme pluviale (jgheaburi, burlane, opritoare de zăpadă) pentru evacuarea eficientă a apei pluviale.
-                    </p>
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Service Card 7 -->
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
-                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                        <i data-lucide="paint-roller" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">7. Vopsire Acoperiș</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Curățare cu presiune înaltă, tratament anticoroziv și vopsire acoperișuri din tablă sau țiglă pentru un aspect ca nou.
-                    </p>
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Service Card 8 -->
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
-                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                        <i data-lucide="layout" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">8. Amenajări Interioare & Exterioare</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Finisaje complete, gresie, faianță, gips-carton, tencuieli decorative, pavaje și amenajare spații exterioare.
-                    </p>
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Service Card 9 -->
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
-                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                        <i data-lucide="shield" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">9. Izolații cu Vată Bazaltică/Minerală</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Izolare termică și fonică superioară pentru poduri și acoperișuri, reducând substanțial costurile cu încălzirea.
-                    </p>
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Service Card 10 -->
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
-                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                        <i data-lucide="grid" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">10. Garduri</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Construcție garduri din jaluzea, șipcă metalică, panouri bordurate, meșteșugite din piatră sau lemn cu soclu rezistent.
-                    </p>
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Service Card 11 -->
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
-                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                        <i data-lucide="sun" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">11. Izolații Exterioare</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Sisteme termoizolante cu polistiren sau vată bazaltică pe fațadă, tencuială decorativă și finisaje exterioare rezistente.
-                    </p>
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Service Card 12 -->
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-xl hover:shadow-orange-500/5 group">
-                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                        <i data-lucide="building-2" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">12. Hidroizolații Blocuri</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Lucrări profesionale de hidroizolație terase de bloc, termosistem și soluții contra infiltrațiilor cu garanție extinsă.
-                    </p>
-                    <a href="tel:+40754705974" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 group-hover:text-orange-300">Cere Ofertă <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-            </div>
-
-            <div class="mt-12 text-center bg-slate-900/50 border border-slate-800 p-6 rounded-2xl">
-                <p class="text-lg font-bold text-white mb-2">Ai nevoie de alte servicii specifice?</p>
-                <p class="text-slate-400 text-sm mb-4">Executăm orice lucrare din domeniul construcțiilor la cererea clientului.</p>
-                <a href="tel:+40754705974" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-orange-400 border border-orange-500/30 px-6 py-3 rounded-xl font-semibold transition">
-                    <i data-lucide="phone-call" class="w-5 h-5"></i>
-                    Discută cu un meșter la +40 754 705 974
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section id="despre" class="py-20 bg-[#0B0F17] relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <span class="text-xs font-bold text-orange-400 tracking-widest uppercase">De Ce Să Ne Alegi Pe Noi</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Echipă cu Experiență & Lucrări Executate Fără Improvizații</h2>
-                    <p class="text-slate-300 leading-relaxed">
-                        Ne mândrim cu o experiență vastă în domeniul montajului și reparațiilor de acoperișuri. Indiferent că aveți o problemă urgentă cu infiltrațiile sau doriți să construiți un acoperiș nou la cheie, vă oferim garanție și seriozitate maximă.
-                    </p>
-
-                    <div class="space-y-4 pt-2">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-orange-500/10 text-orange-400 flex items-center justify-center flex-shrink-0 mt-1">
-                                <i data-lucide="check-circle" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-bold text-white">Răspuns Rapid & Urgențe</h4>
-                                <p class="text-slate-400 text-sm">Răspundem prompt la apeluri și ne deplasăm rapid pentru remedierea avariilor la acoperiș.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-orange-500/10 text-orange-400 flex items-center justify-center flex-shrink-0 mt-1">
-                                <i data-lucide="shield-check" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-bold text-white">Materiale de Calitate Superioară</h4>
-                                <p class="text-slate-400 text-sm">Lucrăm doar cu producători acreditați pentru țiglă, tablă, hidroizolații și vată bazaltică.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-orange-500/10 text-orange-400 flex items-center justify-center flex-shrink-0 mt-1">
-                                <i data-lucide="badge-percent" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-bold text-white">Prețuri Corecte & Transparență</h4>
-                                <p class="text-slate-400 text-sm">Constatare gratuită, deviz estimativ clar și reducerea curentă de 15% aplicată pe loc.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1200&q=80" alt="Lucrari acoperis" class="w-full h-[450px] object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6 bg-slate-900/90 backdrop-blur-md p-4 rounded-xl border border-slate-700/60">
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <p class="text-white font-bold">Disponibili Imediat</p>
-                                    <p class="text-xs text-slate-400">Sună la +40 754 705 974 pentru programare</p>
-                                </div>
-                                <a href="tel:+40754705974" class="bg-orange-500 text-white p-2.5 rounded-lg">
-                                    <i data-lucide="phone" class="w-5 h-5"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Gallery Section -->
-    <section id="galerie" class="py-20 bg-slate-950">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 class="text-xs font-bold text-orange-400 tracking-widest uppercase">Portofoliu</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-white">Proiecte Recente Executate</p>
-                <p class="text-slate-400">Vezi exemple din lucrările noastre de montaj, dulgherie, hidroizolații și reparații.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
-                    <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=800&q=80" alt="Montaj Tigla Metalica" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-xs font-bold text-orange-400 uppercase">Montaj Nou</span>
-                        <h4 class="text-lg font-bold text-white">Acoperiș Țiglă Metalică Premium</h4>
-                    </div>
-                </div>
-
-                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
-                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Dulgherie si Structura" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-xs font-bold text-orange-400 uppercase">Dulgherie</span>
-                        <h4 class="text-lg font-bold text-white">Sarpantă Lemn & Asterială</h4>
-                    </div>
-                </div>
-
-                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
-                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Izolatie Mansarda" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-xs font-bold text-orange-400 uppercase">Mansardare</span>
-                        <h4 class="text-lg font-bold text-white">Izolație Vată & Amenajare</h4>
-                    </div>
-                </div>
-
-                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
-                    <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=800&q=80" alt="Constructie Gard" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-xs font-bold text-orange-400 uppercase">Garduri</span>
-                        <h4 class="text-lg font-bold text-white">Gard Șipcă Metalică & Soclu</h4>
-                    </div>
-                </div>
-
-                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
-                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Hidroizolatie" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-xs font-bold text-orange-400 uppercase">Hidroizolații</span>
-                        <h4 class="text-lg font-bold text-white">Hidroizolație Terasă Bloc</h4>
-                    </div>
-                </div>
-
-                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
-                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Reparatii Urgenta" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-xs font-bold text-orange-400 uppercase">Urgență</span>
-                        <h4 class="text-lg font-bold text-white">Reparație Rapidă Infiltrație</h4>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Interactive Price Estimator -->
-    <section id="estimator" class="py-20 bg-[#0B0F17]">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
-                <div class="text-center max-w-xl mx-auto mb-8 space-y-2">
-                    <span class="text-xs font-bold text-orange-400 tracking-widest uppercase">Estimator Gratuit</span>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Calculează Ofertă Estimativă</h2>
-                    <p class="text-slate-400 text-sm">Selectează serviciul dorit și suprafața aproximativă pentru o estimare rapidă.</p>
-                </div>
-
-                <form id="estimatorForm" class="space-y-6">
-                    <div>
-                        <label class="block text-sm font-semibold text-slate-300 mb-2">Alege Serviciul Principal:</label>
-                        <select id="serviceSelect" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500">
-                            <option value="montaj">Montaj Acoperiș Nou (Țiglă Ceramică/Metalică)</option>
-                            <option value="reparatii">Reparații Acoperiș / Etanșare</option>
-                            <option value="dulgherie">Dulgherie & Structură Lemn</option>
-                            <option value="hidroizolatie">Hidroizolații Terase / Blocuri</option>
-                            <option value="jgheaburi">Montaj Jgheaburi și Burlane</option>
-                            <option value="vopsire">Vopsire Acoperiș</option>
-                            <option value="izolatie">Izolație Vată Bazaltică / Exterior</option>
-                            <option value="garduri">Construcție Garduri</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <div class="flex justify-between items-center mb-2">
-                            <label class="text-sm font-semibold text-slate-300">Suprafață Estimată (mp):</label>
-                            <span id="areaValue" class="text-orange-400 font-bold text-lg">100 mp</span>
-                        </div>
-                        <input type="range" id="areaRange" min="20" max="500" value="100" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-orange-500">
-                    </div>
-
-                    <!-- Discount Applied Callout -->
-                    <div class="bg-slate-800/80 border border-amber-500/30 rounded-xl p-4 flex items-center justify-between">
-                        <div class="flex items-center gap-3">
-                            <i data-lucide="tag" class="w-6 h-6 text-amber-400"></i>
-                            <div>
-                                <p class="text-xs text-slate-400">Reducere aplicată:</p>
-                                <p class="text-sm font-bold text-amber-300">15% REDUCERE CLIENT NOU</p>
-                            </div>
-                        </div>
-                        <span class="text-xs bg-amber-500/20 text-amber-300 px-2.5 py-1 rounded-full font-semibold">Activă</span>
-                    </div>
-
-                    <button type="button" id="calcBtn" class="w-full bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-bold py-4 rounded-xl shadow-lg glow-orange transition text-base flex items-center justify-center gap-2">
-                        <i data-lucide="calculator" class="w-5 h-5"></i>
-                        <span>Trimite Solicitarea de Pret pe WhatsApp</span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Direct Call Section -->
-    <section id="contact" class="py-20 bg-slate-950 border-t border-slate-800 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                
-                <!-- Contact Info -->
-                <div class="space-y-6">
-                    <span class="text-xs font-bold text-orange-400 tracking-widest uppercase">Contact Rapid</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Suntem Pregătiți Să Începem Lucrarea!</h2>
-                    <p class="text-slate-300">
-                        Contactează-ne prin mesaj, telefon sau WhatsApp pentru o ofertă personalizată de preț. Răspundem rapid la orice solicitare.
-                    </p>
-
-                    <div class="space-y-4 pt-4">
-                        <a href="tel:+40754705974" class="flex items-center gap-4 bg-slate-900 border border-slate-800 p-4 rounded-2xl hover:border-orange-500 transition group">
-                            <div class="w-12 h-12 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center group-hover:bg-orange-500 group-hover:text-white transition">
-                                <i data-lucide="phone-call" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-400">Telefon Direct (Disponibil 24/7)</p>
-                                <p class="text-xl font-extrabold text-white">+40 754 705 974</p>
-                            </div>
-                        </a>
-
-                        <a href="https://wa.me/40754705974" target="_blank" class="flex items-center gap-4 bg-slate-900 border border-slate-800 p-4 rounded-2xl hover:border-emerald-500 transition group">
-                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition">
-                                <i data-lucide="message-square" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-400">WhatsApp Instant</p>
-                                <p class="text-xl font-extrabold text-white">Trimite un mesaj pe WhatsApp</p>
-                            </div>
-                        </a>
-
-                        <div class="flex items-center gap-4 bg-slate-900 border border-slate-800 p-4 rounded-2xl">
-                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center">
-                                <i data-lucide="clock" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-400">Program de Lucru</p>
-                                <p class="text-base font-bold text-white">Luni - Duminică: Non-Stop pentru Urgențe</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Direct Form -->
-                <div class="bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-3xl shadow-xl">
-                    <h3 class="text-xl font-bold text-white mb-4">Trimite un Mesaj Rapid</h3>
-                    <form id="contactForm" class="space-y-4">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-400 mb-1">Numele Tău:</label>
-                            <input type="text" id="formName" required placeholder="Ex: Ion Popescu" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500 text-sm">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-400 mb-1">Număr de Telefon:</label>
-                            <input type="tel" id="formPhone" required placeholder="Ex: 07xx xxx xxx" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500 text-sm">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-400 mb-1">Detalii Lucrare / Mesaj:</label>
-                            <textarea id="formMessage" rows="4" required placeholder="Descrie pe scurt ce lucrare dorești să execuți..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500 text-sm"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold py-3.5 rounded-xl transition text-sm flex items-center justify-center gap-2">
-                            <i data-lucide="send" class="w-4 h-4"></i>
-                            <span>Trimite Mesaj pe WhatsApp</span>
-                        </button>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-slate-900 py-10 text-slate-500 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-2">
-                <i data-lucide="home" class="w-5 h-5 text-orange-500"></i>
-                <span class="font-bold text-slate-300">EXPERT ACOPERIȘURI</span>
-                <span>© 2026 Toate drepturile rezervate.</span>
-            </div>
-            <div class="flex items-center gap-6">
-                <a href="tel:+40754705974" class="hover:text-orange-400 transition">+40 754 705 974</a>
-                <a href="#servicii" class="hover:text-orange-400 transition">Servicii</a>
-                <a href="https://wa.me/40754705974" target="_blank" class="hover:text-emerald-400 transition">WhatsApp</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Mobile Floating Click-to-Call / WhatsApp Bar -->
-    <div class="sm:hidden fixed bottom-4 left-4 right-4 z-50 flex items-center gap-2">
-        <a href="tel:+40754705974" class="flex-1 bg-orange-600 active:bg-orange-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-2xl flex items-center justify-center gap-2 text-sm glow-orange">
-            <i data-lucide="phone" class="w-5 h-5"></i>
-            <span>Suna Acum</span>
-        </a>
-        <a href="https://wa.me/40754705974" target="_blank" class="flex-1 bg-emerald-600 active:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-2xl flex items-center justify-center gap-2 text-sm">
-            <i data-lucide="message-square" class="w-5 h-5"></i>
-            <span>WhatsApp</span>
-        </a>
+    <button class="burger" aria-label="Meniu" aria-expanded="false"><span></span></button>
+  </div>
+  <nav class="mnav">
+    <a href="/servicii/">Servicii</a><a href="/lucrari/">Lucrări</a><a href="/recenzii/">Garanție</a><a href="/calculator-pret/">Calculator preț</a><a href="/intrebari-frecvente/">Întrebări</a><a href="/contact/">Contact</a>
+    <div class="m-act">
+      <a class="btn btn-d btn-blk" href="tel:+40754705974"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> 0754 705 974</a>
+      <a class="btn btn-p btn-blk" href="/calculator-pret/">Cereți oferta</a>
     </div>
+  </nav>
+</header>
+<main>
+<section class="hero" id="top">
+  <div class="wrap"><div class="hero-grid">
+    <div>
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Acoperire națională · Echipe mobile</span>
+      <h1>Acoperiș nou sau reparat, în toată România — <em>deviz gratuit azi</em></h1>
+      <p class="lead">Executăm manopera cu echipă proprie, la preț fix stabilit dinainte — fără costuri ascunse. Materialele le cumpărați direct de la furnizor, la prețul lui, iar noi vă ajutăm să calculați exact cât aveți nevoie.</p>
+      
+      <div class="pills">
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Deplasare și măsurătoare gratuite</span>
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Preț fix, fără costuri ascunse</span>
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Garanție scrisă la manoperă</span>
+      </div>
+      <div class="hero-act">
+        <a class="btn btn-p" href="tel:+40754705974"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Sunați acum</a>
+        <a class="btn btn-o" href="/calculator-pret/">Cereți o ofertă gratuită</a>
+      </div>
+      <p class="hero-tel">Preferați telefonic? <a href="tel:+40754705974">0754 705 974</a></p>
+    </div>
+    <div class="formcard">
+  <h2>Cereți o ofertă gratuită</h2>
+  <p class="fsub">Completați și vă sunăm în cel mai scurt timp. Fără obligații.</p>
+  <form data-lead novalidate>
+    <div class="ferr">Vă rugăm să verificați numărul de telefon și localitatea, apoi să trimiteți din nou.</div>
+    <div class="fok">Vă mulțumim! Solicitarea a fost trimisă pe email — vă contactăm în cel mai scurt timp.</div>
+    <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fgrid">
+      <div class="f2">
+        <div class="field"><label for="hero-n">Nume <small>(opțional)</small></label><input id="hero-n" name="nume" type="text" autocomplete="name" placeholder="Numele dumneavoastră"></div>
+        <div class="field"><label for="hero-t">Telefon <i>*</i></label><input id="hero-t" name="telefon" type="tel" inputmode="tel" autocomplete="tel" placeholder="07xx xxx xxx"></div>
+      </div>
+      <div class="field"><label for="hero-o">Localitate / județ <i>*</i></label><input id="hero-o" name="oras" type="text" placeholder="Unde este lucrarea?"></div>
+      
+      <div class="field">
+        <label for="hero-l">Ce lucrare vă interesează?</label>
+        <select id="hero-l" name="lucrare">
+          <option value="">Alegeți din listă</option>
+          <option>Înlocuire acoperiș</option>
+          <option>Montaj acoperiș nou</option>
+          <option>Renovare sau restaurare acoperiș</option>
+          <option>Reparații și infiltrații</option>
+          <option>Dulgherie și șarpantă</option>
+          <option>Hidroizolații și folie anticondens</option>
+          <option>Jgheaburi și burlane</option>
+          <option>Altă lucrare</option>
+        </select>
+      </div>
+      <button class="btn btn-p btn-blk" type="submit">Trimiteți solicitarea</button>
+      <p class="fnote">Fără obligații. Vă contactăm în cel mai scurt timp.<br>Sau sunați direct: <a href="tel:+40754705974"><b>0754 705 974</b></a></p>
+    </div>
+  </form>
+</div>
+  </div></div>
+</section>
 
-    <!-- JavaScript Interactions -->
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
+<div class="strip"><div class="wrap"><div class="strip-in">
+  <div class="stat"><b>42</b><span>județe acoperite</span></div>
+  <div class="stat"><b>0 lei</b><span>deplasare și deviz</span></div>
+  <div class="stat"><b>100%</b><span>garanție la manoperă</span></div>
+  <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Garanție la manoperă</span>
+  <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Deplasare și deviz gratuit</span>
+  <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Echipă proprie</span>
+</div></div></div>
 
-        // Mobile Menu Toggle Logic
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
+<section style="padding:52px 0 0"><div class="wrap"><div class="calcbar rv">
+  <div class="calcbar-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h2M12 10h2M16 10h.01M8 14h2M12 14h2M16 14h.01M8 18h6"/></svg></div>
+  <div class="calcbar-tx"><b>Cât costă acoperișul dumneavoastră?</b>
+  <span>Calculați suprafața în 1 minut și vă sunăm cu prețul în 24 de ore.</span></div>
+  <a class="btn btn-p" href="/calculator-pret/">Calculați acum <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div></div></section>
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+<section id="servicii">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="kicker">Servicii</span>
+      <h2>Cu ce vă putem ajuta</h2>
+      <p>Aceeași echipă pentru toate etapele — un singur responsabil pentru rezultat, de la primul telefon până la predare.</p>
+    </div>
+    <div class="grid g2"><article class="svc rv card-feat">
+  <div class="svc-img"><img src="/images/svc-metalica.webp" alt="Înlocuire acoperiș — lucrare executată de echipa Acoperis Fiabil" loading="lazy" width="800" height="500"></div>
+  <div class="svc-b"><span class="tag">Cel mai cerut</span><h3>Înlocuire acoperiș</h3><p>Scoatem învelitoarea veche și montăm un acoperiș complet nou — folie, țiglă și tinichigerie. Etanș, izolat, gata de iarnă.</p>
+  <a class="btn btn-sm btn-o" href="tel:+40754705974">Sunați pentru înlocuire</a>
+  </div>
+</article>
+<article class="svc rv">
+  <div class="svc-img"><img src="/images/svc-ceramica.webp" alt="Montaj acoperiș nou — lucrare executată de echipa Acoperis Fiabil" loading="lazy" width="800" height="500"></div>
+  <div class="svc-b"><span class="tag">Deviz 0 lei</span><h3>Montaj acoperiș nou</h3><p>Ridicăm acoperișul unei case noi, de la șarpantă până la ultimul detaliu de tinichigerie, în ordinea corectă a straturilor.</p>
+  <a class="btn btn-sm btn-o" href="tel:+40754705974">Sunați pentru montaj</a>
+  </div>
+</article>
+<article class="svc rv">
+  <div class="svc-img"><img src="/images/svc-reparatii.webp" alt="Reparații și infiltrații — lucrare executată de echipa Acoperis Fiabil" loading="lazy" width="800" height="500"></div>
+  <div class="svc-b"><span class="tag">Intervenție rapidă</span><h3>Reparații și infiltrații</h3><p>Găsim sursa reală a infiltrației și reparăm punctual — țigle sparte, coame desfăcute sau racorduri la coș neetanșe.</p>
+  <a class="btn btn-sm btn-o" href="tel:+40754705974">Sunați pentru reparație</a>
+  </div>
+</article>
+<article class="svc rv">
+  <div class="svc-img"><img src="/images/svc-dulgherie.webp" alt="Dulgherie și șarpantă — lucrare executată de echipa Acoperis Fiabil" loading="lazy" width="800" height="500"></div>
+  <div class="svc-b"><span class="tag">Structură consolidată</span><h3>Dulgherie și șarpantă</h3><p>Reparăm sau înlocuim structura de lemn a acoperișului — astereală, șipcă, contrașipcă, corect dimensionate și montate.</p>
+  <a class="btn btn-sm btn-o" href="tel:+40754705974">Sunați pentru șarpantă</a>
+  </div>
+</article></div>
+    <div style="margin-top:32px"><a class="btn btn-o" href="/servicii/">Vedeți toate serviciile — inclusiv tablă Lindab și hidroizolații <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
 
-        // Close mobile menu on link click
-        document.querySelectorAll('#mobileMenu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
+<section class="sec-soft">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="kicker">În detaliu</span>
+      <h2>Cum alegeți o firmă de acoperișuri</h2>
+      <p>Un acoperiș se vede greu după ce este montat, iar problemele apar abia la a doua sau a treia iarnă. Mai jos sunt lucrurile pe care merită să le verificați la orice firmă, inclusiv la noi.</p>
+    </div>
+    <div class="pts">
+      <div class="pt rv"><h3>Cereți un deviz pe etape, nu o sumă globală</h3><p>O ofertă serioasă arată separat structura, stratul de sub învelitoare, învelitoarea și tinichigeria. Dacă primiți o singură cifră pentru tot, nu aveți cum să comparați două oferte și nu aveți cum să observați că una dintre ele a sărit peste folia anticondens sau peste contrașipci.</p></div>
+      <div class="pt rv"><h3>Întrebați cine execută efectiv lucrarea</h3><p>Multe firme preiau lucrarea și o dau mai departe unei echipe găsite pentru acel proiect. Atunci când apare o problemă după finalizare, nu mai este clar cine răspunde. La noi lucrarea o execută oamenii noștri, de la șarpantă până la tinichigerie.</p></div>
+      <div class="pt rv"><h3>Verificați ce spune firma despre materiale</h3><p>Noi executăm manopera și nu vindem materiale. Vă calculăm necesarul exact, vă recomandăm furnizori de încredere, iar dumneavoastră cumpărați direct de la ei, la prețul lor. Când executantul vinde și materialul, nu aveți cum să vedeți unde se termină prețul materialului și unde începe adaosul.</p></div>
+      <div class="pt rv"><h3>Fiți atent la oferta dată prin telefon</h3><p>Un preț dat fără măsurătoare este o estimare, nu o ofertă, și aproape întotdeauna crește pe parcurs. Suprafața reală a unui acoperiș este mai mare decât suprafața casei, uneori cu 30 până la 40 la sută, în funcție de pantă și de forma acoperișului. De aceea venim și măsurăm înainte de a da un preț.</p></div>
+      <div class="pt rv"><h3>Întrebați ce se întâmplă dacă apar surprize</h3><p>La acoperișurile vechi, adevărata stare a lemnului se vede abia după ce se demontează învelitoarea. O firmă corectă vă spune de la început ce ar putea apărea și cum se tarifează, nu vă anunță la jumătatea lucrării că mai sunt de plătit lucruri despre care nu s-a discutat.</p></div>
+    </div>
+  </div>
+</section>
 
-        // Area Range Slider Logic
-        const areaRange = document.getElementById('areaRange');
-        const areaValue = document.getElementById('areaValue');
+<section id="proces">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="kicker">Cum lucrăm</span>
+      <h2>Cum ajungeți de la o întrebare la o ofertă</h2>
+      <p>Patru pași, fără niciun cost până în momentul în care acceptați oferta.</p>
+    </div>
+    <div class="steps">
+      <div class="step hl rv"><span class="n">01</span><h3>Ne contactați</h3><p>Ne spuneți ce aveți de făcut. Dacă nu sunteți sigur, vă ajutăm să vă lămuriți la telefon.</p></div>
+      <div class="step hl rv"><span class="n">02</span><h3>Venim și măsurăm</h3><p>Ne deplasăm la fața locului, luăm măsurătorile reale și verificăm starea acoperișului.</p></div>
+      <div class="step hl rv"><span class="n">03</span><h3>Primiți oferta</h3><p>Deviz pe etape, cu necesarul de materiale și cu manopera separat, la preț final.</p></div>
+      <div class="step hl rv"><span class="n">04</span><h3>Executăm lucrarea</h3><p>Începem la data stabilită, lucrăm curat și oferim garanție la manoperă.</p></div>
+    </div>
+  </div>
+</section>
 
-        areaRange.addEventListener('input', (e) => {
-            areaValue.textContent = `${e.target.value} mp`;
-        });
+<section class="sec-soft">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="kicker">De ce Acoperis Fiabil</span><h2>De ce ne aleg clienții</h2></div>
+    <div class="grid g3">
+      <div class="card rv"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15l6-6 6 6-6 6z"/><path d="M9 9l6-6 6 6-6 6"/></svg></div><h3>Deplasare și deviz gratuit</h3><p>Venim, măsurăm și vă dăm un preț clar înainte să începem.</p></div>
+      <div class="card rv"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></div><h3>Echipă proprie</h3><p>Lucrarea o execută oamenii noștri, nu o echipă subcontractată.</p></div>
+      <div class="card rv"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l9 5-9 5-9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></div><h3>Nu vindem materiale</h3><p>Cumpărați direct de la furnizor. Noi executăm manopera.</p></div>
+      <div class="card rv"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Echipe în toată țara</h3><p>Ne deplasăm în orice județ, fără taxă de deplasare.</p></div>
+      <div class="card rv"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Garanție la manoperă</h3><p>Dacă apare o problemă la lucrarea noastră, o remediem.</p></div>
+      <div class="card rv"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l7-7"/><path d="M13 5l6 6-4 4-6-6z"/><path d="M9 21l-5-1 1-5"/></svg></div><h3>Curățenie la final</h3><p>Vă predăm lucrarea și lăsăm locul curat.</p></div>
+    </div>
+  </div>
+</section>
 
-        // Calculator Form -> Redirect to WhatsApp with pre-filled message
-        document.getElementById('calcBtn').addEventListener('click', () => {
-            const service = document.getElementById('serviceSelect').selectedOptions[0].text;
-            const area = areaRange.value;
-            const phone = "40754705974";
+<section id="lucrari">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="kicker">Lucrări</span>
+      <h2>Lucrări executate de echipa noastră</h2>
+      <p>Câteva dintre acoperișurile la care a lucrat echipa noastră.</p>
+    </div>
+    <div class="works"><figure class="work rv" data-lb="/images/rec-1.webp" data-alt="Acoperiș nou din țiglă metalică antracit">
+  <img src="/images/rec-1.webp" alt="Acoperiș nou din țiglă metalică antracit — lucrare Acoperis Fiabil" loading="lazy">
+  <figcaption class="work-ov"><span>Înlocuire</span><b>Acoperiș nou din țiglă metalică antracit</b></figcaption>
+</figure>
+<figure class="work rv" data-lb="/images/rec-3.webp" data-alt="Acoperiș în patru ape, refăcut complet">
+  <img src="/images/rec-3.webp" alt="Acoperiș în patru ape, refăcut complet — lucrare Acoperis Fiabil" loading="lazy">
+  <figcaption class="work-ov"><span>Renovare</span><b>Acoperiș în patru ape, refăcut complet</b></figcaption>
+</figure>
+<figure class="work rv" data-lb="/images/rec-2.webp" data-alt="Montaj cu echipă proprie, la casă bătrânească">
+  <img src="/images/rec-2.webp" alt="Montaj cu echipă proprie, la casă bătrânească — lucrare Acoperis Fiabil" loading="lazy">
+  <figcaption class="work-ov"><span>Montaj</span><b>Montaj cu echipă proprie, la casă bătrânească</b></figcaption>
+</figure>
+<figure class="work rv" data-lb="/images/pf-01.webp" data-alt="Șarpantă și astereală refăcute">
+  <img src="/images/pf-01.webp" alt="Șarpantă și astereală refăcute — lucrare Acoperis Fiabil" loading="lazy">
+  <figcaption class="work-ov"><span>Dulgherie</span><b>Șarpantă și astereală refăcute</b></figcaption>
+</figure>
+<figure class="work rv" data-lb="/images/pf-02.webp" data-alt="Sistem complet, de la coamă la streașină">
+  <img src="/images/pf-02.webp" alt="Sistem complet, de la coamă la streașină — lucrare Acoperis Fiabil" loading="lazy">
+  <figcaption class="work-ov"><span>Montaj</span><b>Sistem complet, de la coamă la streașină</b></figcaption>
+</figure>
+<figure class="work rv" data-lb="/images/pf-03.webp" data-alt="Folie anticondens pe toată suprafața">
+  <img src="/images/pf-03.webp" alt="Folie anticondens pe toată suprafața — lucrare Acoperis Fiabil" loading="lazy">
+  <figcaption class="work-ov"><span>Hidroizolații</span><b>Folie anticondens pe toată suprafața</b></figcaption>
+</figure>
+<figure class="work rv" data-lb="/images/pf-04.webp" data-alt="Sistem pluvial montat și racordat">
+  <img src="/images/pf-04.webp" alt="Sistem pluvial montat și racordat — lucrare Acoperis Fiabil" loading="lazy">
+  <figcaption class="work-ov"><span>Jgheaburi</span><b>Sistem pluvial montat și racordat</b></figcaption>
+</figure>
+<figure class="work rv" data-lb="/images/pf-06.webp" data-alt="Acoperiș finalizat la casă nouă">
+  <img src="/images/pf-06.webp" alt="Acoperiș finalizat la casă nouă — lucrare Acoperis Fiabil" loading="lazy">
+  <figcaption class="work-ov"><span>Construcție nouă</span><b>Acoperiș finalizat la casă nouă</b></figcaption>
+</figure></div>
+    <div style="margin-top:30px"><a class="btn btn-o" href="/lucrari/">Vedeți toate lucrările <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
 
-            const message = `Buna ziua! Doresc o estimare de pret pentru serviciul: ${service}, pe o suprafata de aproximativ ${area} mp. Beneficiez de reducerea de 15%?`;
-            const encodedMessage = encodeURIComponent(message);
+<section class="sec-soft" id="recenzii">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="kicker">Din șantier, nu din poze de prezentare</span><h2>Dovezi, nu promisiuni</h2>
+      <p>În loc de testimoniale pe care nu aveți cum să le verificați, vă arătăm echipa la lucru, filmată direct pe acoperiș.</p></div>
+    <div class="vidgrid rv">
+      <figure class="vidcard">
+        <video controls playsinline preload="metadata" poster="/images/echipa-1-poster.webp">
+          <source src="/videos/echipa-1.mp4" type="video/mp4">
+        </video>
+        <figcaption><span>Echipa la lucru</span><b>Montaj țiglă, filmat pe acoperiș</b></figcaption>
+      </figure>
+      <figure class="vidcard">
+        <video controls playsinline preload="metadata" poster="/images/echipa-2-poster.webp">
+          <source src="/videos/echipa-2.mp4" type="video/mp4">
+        </video>
+        <figcaption><span>Echipa la lucru</span><b>Lucrări la coș și șarpantă</b></figcaption>
+      </figure>
+    </div>
+    <div style="margin-top:30px"><a class="btn btn-o" href="/recenzii/">Vedeți garanția completă <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
 
-            window.open(`https://wa.me/${phone}?text=${encodedMessage}`, '_blank');
-        });
+<section id="zone">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="kicker">Zona de lucru</span>
+      <h2>Lucrăm în toată România — toate cele 41 de județe și București</h2>
+      <p>Echipe mobile care se deplasează oriunde în țară. Spuneți-ne orașul sau satul și organizăm gratuit vizita de evaluare și măsurare, indiferent de distanță.</p>
+    </div>
+    <div class="zgrid">
+<article class="zcard rv"><h3>București și Muntenia</h3><ul><li>București</li><li>Ilfov</li><li>Prahova</li><li>Dâmbovița</li><li>Argeș</li><li>Buzău</li><li>Brăila</li><li>Ialomița</li><li>Călărași</li><li>Giurgiu</li><li>Teleorman</li></ul></article>
+<article class="zcard rv"><h3>Oltenia</h3><ul><li>Dolj</li><li>Gorj</li><li>Mehedinți</li><li>Olt</li><li>Vâlcea</li></ul></article>
+<article class="zcard rv"><h3>Moldova</h3><ul><li>Iași</li><li>Bacău</li><li>Neamț</li><li>Suceava</li><li>Botoșani</li><li>Vaslui</li><li>Galați</li><li>Vrancea</li></ul></article>
+<article class="zcard rv"><h3>Dobrogea</h3><ul><li>Constanța</li><li>Tulcea</li></ul></article>
+<article class="zcard rv"><h3>Transilvania Centru</h3><ul><li>Brașov</li><li>Sibiu</li><li>Mureș</li><li>Alba</li><li>Harghita</li><li>Covasna</li></ul></article>
+<article class="zcard rv"><h3>Nord-Vest</h3><ul><li>Cluj</li><li>Bihor</li><li>Maramureș</li><li>Satu Mare</li><li>Sălaj</li><li>Bistrița-Năsăud</li></ul></article>
+<article class="zcard rv"><h3>Banat și Vest</h3><ul><li>Timiș</li><li>Arad</li><li>Caraș-Severin</li><li>Hunedoara</li></ul></article>
+    </div>
+    <div class="zone" style="margin-top:44px">
+      <div>
+        <h3 style="font-size:1.5rem">Nu vedeți județul dumneavoastră? Sunați oricum.</h3>
+        <p style="margin-top:12px">Ne deplasăm și în comune și sate izolate. Dați-ne un telefon sau lăsați o solicitare, iar noi vă spunem în aceeași zi cum organizăm vizita.</p>
+        <div class="hero-act" style="margin-top:20px"><a class="btn btn-p" href="tel:+40754705974">Sunați acum · 0754 705 974</a><a class="btn btn-o" href="/contact/">Trimiteți o solicitare</a></div>
+      </div>
+      <div class="zbox">
+      <div class="zrow"><span class="zi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span class="zt"><span>Sunați-ne</span><b><a href="tel:+40754705974">0754 705 974</a></b></span></div>
+      <div class="zrow"><span class="zi"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span><span class="zt"><span>Scrieți-ne</span><b><a href="https://wa.me/40754705974?text=Bun%C4%83%20ziua%21%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20lucr%C4%83ri%20la%20acoperi%C8%99." target="_blank" rel="noopener">Trimiteți-ne un mesaj</a></b></span></div>
+      <div class="zrow"><span class="zi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span class="zt"><span>Program</span><b>Disponibili non-stop pentru urgențe</b></span></div>
+      <div class="zrow"><span class="zi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h2M12 10h2M16 10h.01M8 14h2M12 14h2M16 14h.01M8 18h6"/></svg></span><span class="zt"><span>Ofertă</span><b><a href="/calculator-pret/">Calculator preț acoperiș</a></b></span></div>
+    </div>
+    </div>
+  </div>
+</section>
 
-        // Contact Form -> Redirect to WhatsApp with pre-filled details
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = document.getElementById('formName').value;
-            const phoneNum = document.getElementById('formPhone').value;
-            const msg = document.getElementById('formMessage').value;
-            const targetPhone = "40754705974";
+<section class="sec-soft" id="intrebari">
+  <div class="wrap" style="max-width:900px">
+    <div class="sec-head ctr rv"><span class="kicker">Întrebări frecvente</span>
+      <h2>Întrebări frecvente despre firmă și lucrările noastre</h2></div>
+    <div class="acc">
+<div class="acc-i"><button class="acc-q" aria-expanded="false">Ce fel de lucrări executați?</button>
+<div class="acc-a"><div>Tot ce ține de acoperiș: înlocuire, renovare, montaj la case noi, reparații și infiltrații, dulgherie și șarpante, jgheaburi și burlane, hidroizolații și terase. Montăm și panouri sandwich, șindrilă bituminoasă, ferestre de mansardă și luminatoare.</div></div></div>
+<div class="acc-i"><button class="acc-q" aria-expanded="false">Lucrați cu materialele dumneavoastră sau cu ale mele?</button>
+<div class="acc-a"><div>Executăm manopera. Vă calculăm necesarul exact de materiale, vă recomandăm furnizori de încredere și cumpărați direct de la ei, la prețul lor. Așa vedeți separat cât plătiți pe materiale și cât pe manoperă, fără adaos ascuns între cele două.</div></div></div>
+<div class="acc-i"><button class="acc-q" aria-expanded="false">Îmi puteți da un preț la telefon?</button>
+<div class="acc-a"><div>Vă putem spune la telefon cum stau lucrurile în general și la ce să vă așteptați, dar un preț real vine după măsurătoare. Suprafața reală a unui acoperiș este mai mare decât suprafața casei, uneori cu 30 până la 40 la sută, în funcție de pantă și de formă. Un preț dat fără măsurători aproape întotdeauna crește pe parcurs. Deplasarea și măsurătoarea sunt gratuite.</div></div></div>
+<div class="acc-i"><button class="acc-q" aria-expanded="false">În ce zone lucrați?</button>
+<div class="acc-a"><div>Lucrăm la nivel național, cu echipe mobile. Ne spuneți unde este lucrarea și organizăm o vizită pentru evaluare și măsurători gratuite.</div></div></div>
+<div class="acc-i"><button class="acc-q" aria-expanded="false">Cine execută efectiv lucrarea?</button>
+<div class="acc-a"><div>Echipa noastră. Nu subcontractăm lucrările către echipe găsite pentru un singur proiect, tocmai ca să existe un singur responsabil pentru toate etapele și cineva la care puteți reveni după finalizare.</div></div></div>
+<div class="acc-i"><button class="acc-q" aria-expanded="false">Ce garanție oferiți?</button>
+<div class="acc-a"><div>Oferim garanție la manoperă pentru toate lucrările executate de echipa noastră. Garanția materialelor vine de la producătorul pe care îl alegeți, iar un montaj corect este chiar condiția ca acea garanție să rămână valabilă.</div></div></div>
+<div class="acc-i"><button class="acc-q" aria-expanded="false">Cât durează până începeți lucrarea?</button>
+<div class="acc-a"><div>După ce acceptați oferta stabilim împreună data de start și ne încadrăm în termenul convenit. Pentru urgențe, cum ar fi o infiltrație activă, ne organizăm cât mai repede posibil.</div></div></div>
+<div class="acc-i"><button class="acc-q" aria-expanded="false">Se poate plăti în rate?</button>
+<div class="acc-a"><div>Da, pentru lucrările mai mari putem discuta eșalonarea plății pe etapele lucrării. Ne spuneți la telefon ce variantă v-ar conveni și vedem ce se poate face.</div></div></div>
+</div>
+  </div>
+</section>
 
-            const text = `Buna ziua! Numele meu este ${name} (Tel: ${phoneNum}). \nDetalii lucrare: ${msg}`;
-            const encodedText = encodeURIComponent(text);
-
-            window.open(`https://wa.me/${targetPhone}?text=${encodedText}`, '_blank');
-        });
-    </script>
+<section class="cta">
+  <div class="wrap"><div class="cta-grid">
+    <div>
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.2 6.3L21 10.5l-6.8 2.2L12 19l-2.2-6.3L3 10.5l6.8-2.2z"/></svg> Profitați de ofertele de sezon</span>
+      <h2>Cereți oferta pentru acoperișul dvs.</h2>
+      <p>Vă sunăm, venim și măsurăm gratuit, apoi primiți o ofertă clară, cu preț final și garanție la manoperă. Fără obligații.</p>
+      <div class="cta-tel">
+        <a class="btn btn-p" href="tel:+40754705974"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Sunați acum · 0754 705 974</a>
+        <a class="btn btn-w" href="https://wa.me/40754705974?text=Bun%C4%83%20ziua%21%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20lucr%C4%83ri%20la%20acoperi%C8%99." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> WhatsApp</a>
+      </div>
+    </div>
+    <div class="formcard">
+  <h2>Solicitare rapidă</h2>
+  <p class="fsub">Lăsați numele și telefonul. Vă contactăm noi.</p>
+  <form data-lead novalidate>
+    <div class="ferr">Vă rugăm să verificați numărul de telefon și localitatea, apoi să trimiteți din nou.</div>
+    <div class="fok">Vă mulțumim! Solicitarea a fost trimisă pe email — vă contactăm în cel mai scurt timp.</div>
+    <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fgrid">
+      <div class="f2">
+        <div class="field"><label for="cta-n">Nume <small>(opțional)</small></label><input id="cta-n" name="nume" type="text" autocomplete="name" placeholder="Numele dumneavoastră"></div>
+        <div class="field"><label for="cta-t">Telefon <i>*</i></label><input id="cta-t" name="telefon" type="tel" inputmode="tel" autocomplete="tel" placeholder="07xx xxx xxx"></div>
+      </div>
+      <div class="field"><label for="cta-o">Localitate / județ <i>*</i></label><input id="cta-o" name="oras" type="text" placeholder="Unde este lucrarea?"></div>
+      
+      <button class="btn btn-p btn-blk" type="submit">Trimiteți solicitarea</button>
+      <p class="fnote">Fără obligații. Vă contactăm în cel mai scurt timp.<br>Sau sunați direct: <a href="tel:+40754705974"><b>0754 705 974</b></a></p>
+    </div>
+  </form>
+</div>
+  </div></div>
+</section>
+</main><nav class="bar" aria-label="Acțiuni rapide">
+  <a class="b1" href="tel:+40754705974"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>Sunați</span></a>
+  <a class="b2" href="https://wa.me/40754705974?text=Bun%C4%83%20ziua%21%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20lucr%C4%83ri%20la%20acoperi%C8%99." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>WhatsApp</span></a>
+  <a class="b3" href="/calculator-pret/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h2M12 10h2M16 10h.01M8 14h2M12 14h2M16 14h.01M8 18h6"/></svg><span>Ofertă</span></a>
+</nav><footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-g">
+      <div>
+        <a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#141110"/><path d="M5 17 L16 7 L27 17" stroke="#c43a17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M8.5 15.5 L8.5 25 L23.5 25 L23.5 15.5" stroke="#F6F1EA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg><span class="brand-t"><b>Acoperis Fiabil</b><span>Acoperișuri · Toată România</span></span></a>
+        <p class="fdesc">Montaj și reparații acoperișuri, executate profesionist, în toată țara. Materiale de la producători de încredere și garanție la manoperă.</p>
+      </div>
+      <div>
+        <h4>Servicii</h4>
+        <ul>
+          <li><a href="/servicii/">Înlocuire acoperiș</a></li>
+          <li><a href="/servicii/">Montaj acoperiș nou</a></li>
+          <li><a href="/servicii/">Reparații și infiltrații</a></li>
+          <li><a href="/servicii/">Dulgherie și șarpantă</a></li>
+          <li><a href="/servicii/">Hidroizolații și terase</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/lucrari/">Lucrări executate</a></li>
+          <li><a href="/recenzii/">Garanție</a></li>
+          <li><a href="/calculator-pret/">Calculator preț</a></li>
+          <li><a href="/despre/">Despre noi</a></li>
+          <li><a href="/intrebari-frecvente/">Întrebări frecvente</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+40754705974">0754 705 974</a></li>
+          <li><a href="https://wa.me/40754705974?text=Bun%C4%83%20ziua%21%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20lucr%C4%83ri%20la%20acoperi%C8%99." target="_blank" rel="noopener">Scrieți pe WhatsApp</a></li>
+          <li><a href="/contact/">Formular de contact</a></li>
+          <li>Acoperire națională</li>
+          <li>Program non-stop</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-b">
+      <span>© <span data-yr></span> Acoperis Fiabil. Toate drepturile rezervate.</span>
+      <span>Deplasare gratuită · Acoperire națională · Garanție la manoperă</span>
+    </div>
+  </div>
+</footer>
+<div class="lb" id="lb"><button class="lb-x" aria-label="Închide">×</button><img src="" alt=""></div>
+<script src="/assets/script.js" defer></script>
 </body>
 </html>
-```

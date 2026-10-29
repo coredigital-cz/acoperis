@@ -1,0 +1,17 @@
+{
+  "name": "Acoperis Fiabil",
+  "short_name": "Acoperis Fiabil",
+  "description": "Montaj, înlocuire și reparații acoperișuri, dulgherie și hidroizolații, în toată România.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#c43a17",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "lang": "ro"
+}
